@@ -19,7 +19,7 @@ void *list_pop_front(List list);
 
 void *list_pop_value(List list, void *value, int (*fun_equals)(void*, void*));
 
-/* 	Applies fun_apply to each element of the list. Use this for custom prints or in-place changes. */
+/* Applies fun_apply to each element of the list. Use this for custom prints or in-place changes. */
 void list_apply(List list, void (*fun_apply)(void*));
 
 /* Same as list_apply but returns a new list with the mapped data. */
